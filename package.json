@@ -1,0 +1,28 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "Tracks and maintains employees work information, such as role, salary and department within the company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurtej154/Employee-management-system.git"
+  },
+  "author": "Gurtej Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurtej154/Employee-management-system/issues"
+  },
+  "homepage": "https://github.com/gurtej154/Employee-management-system#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "console-table-printer": "^2.10.0",
+    "dotenv": "^10.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.3"
+  }
+}
