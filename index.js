@@ -1,5 +1,5 @@
 require("colors");
-require("dotenv");
+require("dotenv").config();
 let figlet = require("figlet");
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
@@ -60,7 +60,7 @@ function firstPrompt() {
         "Remove Employees",
         "Update Employee Role",
         "Add Role",
-        "End",
+        "Exit",
       ],
     })
     .then(function ({ task }) {
@@ -83,8 +83,8 @@ function firstPrompt() {
         case "Add Role":
           addRole();
           break;
-        case "End":
-          db.end();
+        case "Exit":
+          exit();
           break;
       }
     })
