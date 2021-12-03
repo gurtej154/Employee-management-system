@@ -217,7 +217,7 @@ function promptInsert(roleChoices) {
     .then(function (answer) {
       console.log(answer);
 
-      var query = `INSERT INTO employee SET ?`;
+      let query = `INSERT INTO employee SET ?`;
       db.query(
         query,
         {
