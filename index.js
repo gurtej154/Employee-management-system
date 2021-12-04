@@ -52,7 +52,7 @@ function firstPrompt() {
     .prompt({
       type: "list",
       name: "task",
-      message: "Would you like to do?",
+      message: "what Would you like to do?",
       choices: [
         "View Employees",
         "View Employees by Department",
@@ -146,7 +146,7 @@ function promptDepartment(departmentChoices) {
       {
         type: "list",
         name: "departmentId",
-        message: "Which department would you choose?",
+        message: "Which department would you like to choose?",
         choices: departmentChoices,
       },
     ])
@@ -342,7 +342,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
       {
         type: "list",
         name: "employeeId",
-        message: "Which employee do you want to set with the role?",
+        message: "Which employee do you want to set with a role?",
         choices: employeeChoices,
       },
       {
