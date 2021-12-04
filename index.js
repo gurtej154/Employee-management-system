@@ -83,7 +83,7 @@ function firstPrompt() {
         case "Add Role":
           addRole();
           break;
-        case "Exit":
+        default:
           exit();
           break;
       }
@@ -426,7 +426,7 @@ function promptAddRole(departmentChoices) {
         function (err, res) {
           if (err) throw err;
 
-          console.table(res);
+          printTable(res);
           console.log("Role Inserted!");
 
           firstPrompt();
